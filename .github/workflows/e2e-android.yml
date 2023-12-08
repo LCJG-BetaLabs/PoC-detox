@@ -9,11 +9,15 @@ jobs:
       - name: Checkout repository
         uses: actions/checkout@v3
 
+      - name: Set Working Directory
+        run: cd TestDetox
+        working-directory: TestDetox
+
       - name: Setup Node.js
         uses: actions/setup-node@v3
         with:
           cache: yarn
-          node-version-file: TestDetox/.node-version
+          node-version-file: .node-version
 
       - name: Install Yarn dependencies
         run: cd TestDetox; yarn --frozen-lockfile --prefer-offline
