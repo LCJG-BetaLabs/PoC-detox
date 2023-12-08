@@ -1,7 +1,6 @@
 name: e2e-android
-on:
-  pull_request:
-    branches: ['staging', 'master']
+on: push
+
 jobs:
   e2e-android:
     runs-on: macos-latest
