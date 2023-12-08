@@ -12,12 +12,12 @@ module.exports = {
   apps: {
     'ios.debug': {
       type: 'ios.app',
-      binaryPath: 'ios/build/Products/Debug-iphonesimulator/TestDetox.app',
+      binaryPath: 'ios/build/Build/Products/Debug-iphonesimulator/TestDetox.app',
       build: 'xcodebuild -workspace ios/TestDetox.xcworkspace -scheme TestDetox -configuration Debug -sdk iphonesimulator -derivedDataPath ios/build'
     },
     'ios.release': {
       type: 'ios.app',
-      binaryPath: 'ios/build/Products/Release-iphonesimulator/TestDetox.app',
+      binaryPath: 'ios/build/Build/Products/Release-iphonesimulator/TestDetox.app',
       build: 'xcodebuild -workspace ios/TestDetox.xcworkspace -scheme TestDetox -configuration Release -sdk iphonesimulator -derivedDataPath ios/build'
     },
     'android.debug': {
