@@ -7,20 +7,17 @@ describe('Example', () => {
     await device.reloadReactNative();
   });
 
-  it('should have welcome screen', async () => {
-    // await expect(element(by.id('welcome'))).toBeVisible();
-    expect(1).toBe(1);
+  it('should show step one section', async () => {
+    await expect(element(by.text('Step One'))).toBeVisible();
   });
 
-  it('should show hello screen after tap', async () => {
-    // await element(by.id('hello_button')).tap();
-    // await expect(element(by.text('Hello!!!'))).toBeVisible();
-    expect(1).toBe(1);
+  it('should show see your change section', async () => {
+    await expect(element(by.text('See Your Changes'))).toBeVisible();
+
   });
 
-  it('should show world screen after tap', async () => {
-    // await element(by.id('world_button')).tap();
-    // await expect(element(by.text('World!!!'))).toBeVisible();
-    expect(1).toBe(1);
+  it('should show debug section', async () => {
+
+    await expect(element(by.text('Debug'))).toBeVisible();
   });
 });
